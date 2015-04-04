@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E2AEDBD1ACFBDB0005D9510 /* LLWaterfallFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2AEDBC1ACFBDB0005D9510 /* LLWaterfallFlowView.m */; };
+		7E2AEDC01AD0311E005D9510 /* LLWaterflowViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2AEDBF1AD0311E005D9510 /* LLWaterflowViewCell.m */; };
+		7E2AEDC31AD03403005D9510 /* WaterfallFlowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2AEDC21AD03403005D9510 /* WaterfallFlowViewController.m */; };
 		7E7B98D91ACFB1DC00E88762 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7B98D81ACFB1DC00E88762 /* main.m */; };
 		7E7B98DC1ACFB1DC00E88762 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7B98DB1ACFB1DC00E88762 /* AppDelegate.m */; };
 		7E7B98DF1ACFB1DC00E88762 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7B98DE1ACFB1DC00E88762 /* ViewController.m */; };
@@ -14,6 +17,7 @@
 		7E7B98E41ACFB1DC00E88762 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E7B98E31ACFB1DC00E88762 /* Images.xcassets */; };
 		7E7B98E71ACFB1DC00E88762 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E7B98E51ACFB1DC00E88762 /* LaunchScreen.xib */; };
 		7E7B98F31ACFB1DC00E88762 /* custom_kityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7B98F21ACFB1DC00E88762 /* custom_kityTests.m */; };
+		7E7B99001ACFB29C00E88762 /* UIButton+LLCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7B98FF1ACFB29C00E88762 /* UIButton+LLCustom.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +31,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E2AEDBB1ACFBDB0005D9510 /* LLWaterfallFlowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLWaterfallFlowView.h; sourceTree = "<group>"; };
+		7E2AEDBC1ACFBDB0005D9510 /* LLWaterfallFlowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLWaterfallFlowView.m; sourceTree = "<group>"; };
+		7E2AEDBE1AD0311E005D9510 /* LLWaterflowViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLWaterflowViewCell.h; sourceTree = "<group>"; };
+		7E2AEDBF1AD0311E005D9510 /* LLWaterflowViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLWaterflowViewCell.m; sourceTree = "<group>"; };
+		7E2AEDC11AD03403005D9510 /* WaterfallFlowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterfallFlowViewController.h; sourceTree = "<group>"; };
+		7E2AEDC21AD03403005D9510 /* WaterfallFlowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterfallFlowViewController.m; sourceTree = "<group>"; };
 		7E7B98D31ACFB1DC00E88762 /* custom-kity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "custom-kity.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E7B98D71ACFB1DC00E88762 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E7B98D81ACFB1DC00E88762 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +50,8 @@
 		7E7B98EC1ACFB1DC00E88762 /* custom-kityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "custom-kityTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E7B98F11ACFB1DC00E88762 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E7B98F21ACFB1DC00E88762 /* custom_kityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = custom_kityTests.m; sourceTree = "<group>"; };
+		7E7B98FE1ACFB29C00E88762 /* UIButton+LLCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+LLCustom.h"; sourceTree = "<group>"; };
+		7E7B98FF1ACFB29C00E88762 /* UIButton+LLCustom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+LLCustom.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +93,8 @@
 		7E7B98D51ACFB1DC00E88762 /* custom-kity */ = {
 			isa = PBXGroup;
 			children = (
+				7E7B98FC1ACFB26F00E88762 /* controllers */,
+				7E7B98FD1ACFB26F00E88762 /* views */,
 				7E7B98DA1ACFB1DC00E88762 /* AppDelegate.h */,
 				7E7B98DB1ACFB1DC00E88762 /* AppDelegate.m */,
 				7E7B98DD1ACFB1DC00E88762 /* ViewController.h */,
@@ -117,6 +131,28 @@
 				7E7B98F11ACFB1DC00E88762 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7E7B98FC1ACFB26F00E88762 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7E2AEDC11AD03403005D9510 /* WaterfallFlowViewController.h */,
+				7E2AEDC21AD03403005D9510 /* WaterfallFlowViewController.m */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		7E7B98FD1ACFB26F00E88762 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				7E7B98FE1ACFB29C00E88762 /* UIButton+LLCustom.h */,
+				7E7B98FF1ACFB29C00E88762 /* UIButton+LLCustom.m */,
+				7E2AEDBB1ACFBDB0005D9510 /* LLWaterfallFlowView.h */,
+				7E2AEDBC1ACFBDB0005D9510 /* LLWaterfallFlowView.m */,
+				7E2AEDBE1AD0311E005D9510 /* LLWaterflowViewCell.h */,
+				7E2AEDBF1AD0311E005D9510 /* LLWaterflowViewCell.m */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +255,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E2AEDC01AD0311E005D9510 /* LLWaterflowViewCell.m in Sources */,
 				7E7B98DF1ACFB1DC00E88762 /* ViewController.m in Sources */,
 				7E7B98DC1ACFB1DC00E88762 /* AppDelegate.m in Sources */,
+				7E7B99001ACFB29C00E88762 /* UIButton+LLCustom.m in Sources */,
 				7E7B98D91ACFB1DC00E88762 /* main.m in Sources */,
+				7E2AEDBD1ACFBDB0005D9510 /* LLWaterfallFlowView.m in Sources */,
+				7E2AEDC31AD03403005D9510 /* WaterfallFlowViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +384,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "custom-kity/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,6 +395,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "custom-kity/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -412,6 +454,7 @@
 				7E7B98F81ACFB1DC00E88762 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7E7B98F91ACFB1DC00E88762 /* Build configuration list for PBXNativeTarget "custom-kityTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +463,7 @@
 				7E7B98FB1ACFB1DC00E88762 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

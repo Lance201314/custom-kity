@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>88962A29-B094-4B5B-BF73-E92FDA3D5EDC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>custom-kity</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1C80AD00B814CD31E5562EC18786997B5F4879E0</key>
+		<string>github.com:Lance201314/custom-kity.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>custom-kity/custom-kity.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1C80AD00B814CD31E5562EC18786997B5F4879E0</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:Lance201314/custom-kity.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1C80AD00B814CD31E5562EC18786997B5F4879E0</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1C80AD00B814CD31E5562EC18786997B5F4879E0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>custom-kity</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -12,6 +12,6 @@
 
 @property (nonatomic, strong) NSString *identifier;
 
-- (id)initWithReuseableIdentifier:(NSString *)identifer;
+- (id)initWithFrame:(CGRect)frame reuseableIdentifier:(NSString *)identifer;
 
 @end

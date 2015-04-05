@@ -10,9 +10,9 @@
 
 @implementation LLWaterflowViewCell
 
-- (id)initWithReuseableIdentifier:(NSString *)identifer
+- (id)initWithFrame:(CGRect)frame reuseableIdentifier:(NSString *)identifer
 {
-    self = [super init];
+    self = [super initWithFrame:frame];
     if (self) {
         self.identifier = identifer;
     }
@@ -20,12 +20,9 @@
     return self;
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    NSLog(@"%@~~~~%@", touches, event);
 }
-*/
 
 @end

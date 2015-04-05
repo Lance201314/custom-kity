@@ -58,10 +58,11 @@ typedef struct {
  *
  *  @param waterfallFlowView self
  *  @param index             cell 位置
- *
+ *  @param frame             cell frame
+ 
  *  @return view
  */
-- (LLWaterflowViewCell *)waterfallFlowView:(LLWaterfallFlowView *)waterfallFlowView viewOfIndex:(NSUInteger)index;
+- (LLWaterflowViewCell *)waterfallFlowView:(LLWaterfallFlowView *)waterfallFlowView frame:(CGRect)frame viewOfIndex:(NSUInteger)index;
 
 /**
  *  cell 高度

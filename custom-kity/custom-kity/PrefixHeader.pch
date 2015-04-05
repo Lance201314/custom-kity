@@ -1,0 +1,17 @@
+//
+//  PrefixHeader.pch
+//  custom-kity
+//
+//  Created by Lance Lan on 15/4/5.
+//  Copyright (c) 2015年 Lance Lan. All rights reserved.
+//
+
+#ifndef custom_kity_PrefixHeader_pch
+#define custom_kity_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#define randomColor [UIColor colorWithRed:random() % 255 / 255.0 green:random() % 255 / 255.0 blue:random() % 255 / 255.0 alpha:random() % 10 / 10.0]
+
+#endif

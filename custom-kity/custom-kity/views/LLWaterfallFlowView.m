@@ -155,6 +155,8 @@ UIKIT_STATIC_INLINE WaterfallFlowViewMargin WaterfallFlowViewMarginMake(CGFloat 
 
 - (void)reload
 {
+    [self.cellFrames removeAllObjects];
+    
     // 多少cell，多少列数
     NSUInteger numberOfCells = [self.dataSource numberOfCellsInWaterfallFlowView:self];
     NSUInteger numberOfColumns = [self numberOfColumn];
@@ -195,6 +197,8 @@ UIKIT_STATIC_INLINE WaterfallFlowViewMargin WaterfallFlowViewMarginMake(CGFloat 
         [self.cellFrames addObject:[NSValue valueWithCGRect:frame]];
         
         maxYOfColumns[cellAtColumn] = CGRectGetMaxY(frame);
+        
+        NSLog(@"%@, %f", NSStringFromCGRect(frame), maxYOfColumns[cellAtColumn]);
     }
     
     // 计算contentSize的高度
@@ -220,15 +224,12 @@ UIKIT_STATIC_INLINE WaterfallFlowViewMargin WaterfallFlowViewMarginMake(CGFloat 
         LLWaterflowViewCell *cell = [self.displayingCells objectForKey:@(i)];
         if ([self isInScreen:frame]) {
             if (cell == nil) {
-                cell = [self.dataSource waterfallFlowView:self viewOfIndex:i];
-                cell.frame = frame;
+                cell = [self.dataSource waterfallFlowView:self frame:frame viewOfIndex:i];
                 [self addSubview:cell];
-                
                 [self.displayingCells setObject:cell forKey:@(i)];
             }
         } else {
             if (cell) {
-                
                 [cell removeFromSuperview];
                 [self.displayingCells removeObjectForKey:@(i)];
                 

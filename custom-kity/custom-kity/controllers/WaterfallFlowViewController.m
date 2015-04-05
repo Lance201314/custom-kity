@@ -9,8 +9,7 @@
 #import "WaterfallFlowViewController.h"
 #import "LLWaterflowViewCell.h"
 #import "LLWaterfallFlowView.h"
-
-#define randomColor [UIColor colorWithRed:random() % 255 / 255.0 green:random() % 255 / 255.0 blue:random() % 255 / 255.0 alpha:random() % 10 / 10.0]
+#import "WaterFlowCell.h"
 
 @interface WaterfallFlowViewController () <LLWaterfallFlowViewDataSource, UIScrollViewDelegate>
 {
@@ -42,7 +41,7 @@
 #pragma mark LLWaterfallFlowViewDataSource
 - (NSInteger)numberOfCellsInWaterfallFlowView:(LLWaterfallFlowView *)waterfallFlowView
 {
-    return 70;
+    return 40;
 }
 
 - (NSInteger)numberOfColumns
@@ -52,18 +51,48 @@
 
 - (CGFloat)waterfallFlowView:(LLWaterfallFlowView *)waterfallFlowView heightAtIndex:(NSUInteger)index
 {
-    CGFloat height = random() % 100 + 60;
+    CGFloat height = 50;
+    
+    NSUInteger temp = index % 4;
+    switch (temp) {
+        case 0:
+        {
+            height = 100;
+        }
+            break;
+        case 1:
+        {
+            height = 140;
+        }
+            break;
+        case 2:
+        {
+            height = 70;
+        }
+            break;
+        case 3:
+        {
+            height = 90;
+        }
+            break;
+            
+        default:
+            height = 50;
+            break;
+    }
     
     return height;
 }
 
-- (LLWaterflowViewCell *)waterfallFlowView:(LLWaterfallFlowView *)waterfallFlowView viewOfIndex:(NSUInteger)index
+- (LLWaterflowViewCell *)waterfallFlowView:(LLWaterfallFlowView *)waterfallFlowView frame:(CGRect)frame viewOfIndex:(NSUInteger)index
 {
     static NSString *cellIdentifier = @"cell01";
-    LLWaterflowViewCell *cell = [waterfallFlowView dequeueReuseableCellWithIdentifier:cellIdentifier];
+    WaterFlowCell *cell = [waterfallFlowView dequeueReuseableCellWithIdentifier:cellIdentifier];
     if (cell == nil) {
-        cell = [[LLWaterflowViewCell alloc] initWithReuseableIdentifier:cellIdentifier];
+        cell = [[WaterFlowCell alloc] initWithFrame:frame reuseableIdentifier:cellIdentifier];
     }
+    
+    cell.titleLabel.text = [NSString stringWithFormat:@"~~~@##%ld", index];
     cell.backgroundColor = randomColor;
     
     return cell;

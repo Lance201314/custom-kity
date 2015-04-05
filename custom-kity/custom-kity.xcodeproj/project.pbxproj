@@ -10,6 +10,7 @@
 		7E2AEDBD1ACFBDB0005D9510 /* LLWaterfallFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2AEDBC1ACFBDB0005D9510 /* LLWaterfallFlowView.m */; };
 		7E2AEDC01AD0311E005D9510 /* LLWaterflowViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2AEDBF1AD0311E005D9510 /* LLWaterflowViewCell.m */; };
 		7E2AEDC31AD03403005D9510 /* WaterfallFlowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2AEDC21AD03403005D9510 /* WaterfallFlowViewController.m */; };
+		7E5FAADB1AD10196002D9DF3 /* WaterFlowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5FAADA1AD10196002D9DF3 /* WaterFlowCell.m */; };
 		7E7B98D91ACFB1DC00E88762 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7B98D81ACFB1DC00E88762 /* main.m */; };
 		7E7B98DC1ACFB1DC00E88762 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7B98DB1ACFB1DC00E88762 /* AppDelegate.m */; };
 		7E7B98DF1ACFB1DC00E88762 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7B98DE1ACFB1DC00E88762 /* ViewController.m */; };
@@ -37,6 +38,9 @@
 		7E2AEDBF1AD0311E005D9510 /* LLWaterflowViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLWaterflowViewCell.m; sourceTree = "<group>"; };
 		7E2AEDC11AD03403005D9510 /* WaterfallFlowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterfallFlowViewController.h; sourceTree = "<group>"; };
 		7E2AEDC21AD03403005D9510 /* WaterfallFlowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterfallFlowViewController.m; sourceTree = "<group>"; };
+		7E5FAAD91AD10196002D9DF3 /* WaterFlowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterFlowCell.h; sourceTree = "<group>"; };
+		7E5FAADA1AD10196002D9DF3 /* WaterFlowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterFlowCell.m; sourceTree = "<group>"; };
+		7E5FAADC1AD10226002D9DF3 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		7E7B98D31ACFB1DC00E88762 /* custom-kity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "custom-kity.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E7B98D71ACFB1DC00E88762 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E7B98D81ACFB1DC00E88762 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -72,6 +76,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E5FAAD81AD10175002D9DF3 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				7E5FAAD91AD10196002D9DF3 /* WaterFlowCell.h */,
+				7E5FAADA1AD10196002D9DF3 /* WaterFlowCell.m */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
 		7E7B98CA1ACFB1DB00E88762 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +125,7 @@
 			children = (
 				7E7B98D71ACFB1DC00E88762 /* Info.plist */,
 				7E7B98D81ACFB1DC00E88762 /* main.m */,
+				7E5FAADC1AD10226002D9DF3 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -136,6 +150,7 @@
 		7E7B98FC1ACFB26F00E88762 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				7E5FAAD81AD10175002D9DF3 /* views */,
 				7E2AEDC11AD03403005D9510 /* WaterfallFlowViewController.h */,
 				7E2AEDC21AD03403005D9510 /* WaterfallFlowViewController.m */,
 			);
@@ -260,6 +275,7 @@
 				7E7B98DC1ACFB1DC00E88762 /* AppDelegate.m in Sources */,
 				7E7B99001ACFB29C00E88762 /* UIButton+LLCustom.m in Sources */,
 				7E7B98D91ACFB1DC00E88762 /* main.m in Sources */,
+				7E5FAADB1AD10196002D9DF3 /* WaterFlowCell.m in Sources */,
 				7E2AEDBD1ACFBDB0005D9510 /* LLWaterfallFlowView.m in Sources */,
 				7E2AEDC31AD03403005D9510 /* WaterfallFlowViewController.m in Sources */,
 			);
@@ -383,6 +399,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "custom-kity/PrefixHeader.pch";
 				INFOPLIST_FILE = "custom-kity/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -394,6 +412,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "custom-kity/PrefixHeader.pch";
 				INFOPLIST_FILE = "custom-kity/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

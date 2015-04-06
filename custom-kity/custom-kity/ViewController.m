@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "UIButton+LLCustom.h"
+#import "FMDBTest.h"
 
 @interface ViewController ()
 
@@ -18,6 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+  
+    [self test];
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.frame = CGRectMake(20.0, 100.0, 300.0, 60.0);
@@ -30,6 +33,39 @@
     [button setBackgroundColor:[UIColor greenColor] forState:UIControlStateHighlighted];
     
     [self.view addSubview:button];
+    
+//    [self performSelector:@selector(test) withObject:nil afterDelay:0];
+}
+
+- (void)test
+{
+    NSDate *date = [NSDate date];
+    FMDBTest *test = [[FMDBTest alloc] init];
+    [test query];
+    NSLog(@"end time: %f", [[NSDate date] timeIntervalSinceDate:date] * 1000);
+}
+
+- (IBAction)query:(id)sender {
+    
+    NSThread *thread = [[NSThread alloc] initWithTarget:self selector:@selector(query) object:nil];
+    [thread start];
+}
+
+- (void)query
+{
+    FMDBTest *test = [[FMDBTest alloc] init];
+    [test update];
+}
+
+- (IBAction)insert:(id)sender {
+    NSThread *thread = [[NSThread alloc] initWithTarget:self selector:@selector(insert) object:nil];
+    [thread start];
+}
+
+- (void)insert
+{
+    FMDBTest *test = [[FMDBTest alloc] init];
+    [test deleteInfo];
 }
 
 - (void)didReceiveMemoryWarning {

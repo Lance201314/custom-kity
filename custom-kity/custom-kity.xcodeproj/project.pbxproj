@@ -10,6 +10,15 @@
 		7E2AEDBD1ACFBDB0005D9510 /* LLWaterfallFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2AEDBC1ACFBDB0005D9510 /* LLWaterfallFlowView.m */; };
 		7E2AEDC01AD0311E005D9510 /* LLWaterflowViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2AEDBF1AD0311E005D9510 /* LLWaterflowViewCell.m */; };
 		7E2AEDC31AD03403005D9510 /* WaterfallFlowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2AEDC21AD03403005D9510 /* WaterfallFlowViewController.m */; };
+		7E59F37B1AD23B1C00F8EF58 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E59F3711AD23B1C00F8EF58 /* FMDatabase.m */; };
+		7E59F37C1AD23B1C00F8EF58 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E59F3731AD23B1C00F8EF58 /* FMDatabaseAdditions.m */; };
+		7E59F37D1AD23B1C00F8EF58 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E59F3751AD23B1C00F8EF58 /* FMDatabasePool.m */; };
+		7E59F37E1AD23B1C00F8EF58 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E59F3771AD23B1C00F8EF58 /* FMDatabaseQueue.m */; };
+		7E59F37F1AD23B1C00F8EF58 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E59F37A1AD23B1C00F8EF58 /* FMResultSet.m */; };
+		7E59F3831AD23BE000F8EF58 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E59F3811AD23BC800F8EF58 /* libsqlite3.dylib */; };
+		7E59F3861AD23C1500F8EF58 /* FMDBUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E59F3851AD23C1500F8EF58 /* FMDBUtil.m */; };
+		7E59F3891AD23C3C00F8EF58 /* FMDBTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E59F3881AD23C3C00F8EF58 /* FMDBTest.m */; };
+		7E59F38F1AD23F4C00F8EF58 /* test_user.db in Resources */ = {isa = PBXBuildFile; fileRef = 7E59F38E1AD23F4C00F8EF58 /* test_user.db */; };
 		7E5FAADB1AD10196002D9DF3 /* WaterFlowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5FAADA1AD10196002D9DF3 /* WaterFlowCell.m */; };
 		7E7B98D91ACFB1DC00E88762 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7B98D81ACFB1DC00E88762 /* main.m */; };
 		7E7B98DC1ACFB1DC00E88762 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7B98DB1ACFB1DC00E88762 /* AppDelegate.m */; };
@@ -38,6 +47,23 @@
 		7E2AEDBF1AD0311E005D9510 /* LLWaterflowViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLWaterflowViewCell.m; sourceTree = "<group>"; };
 		7E2AEDC11AD03403005D9510 /* WaterfallFlowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterfallFlowViewController.h; sourceTree = "<group>"; };
 		7E2AEDC21AD03403005D9510 /* WaterfallFlowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterfallFlowViewController.m; sourceTree = "<group>"; };
+		7E59F3701AD23B1C00F8EF58 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		7E59F3711AD23B1C00F8EF58 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		7E59F3721AD23B1C00F8EF58 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		7E59F3731AD23B1C00F8EF58 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		7E59F3741AD23B1C00F8EF58 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		7E59F3751AD23B1C00F8EF58 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		7E59F3761AD23B1C00F8EF58 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		7E59F3771AD23B1C00F8EF58 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		7E59F3781AD23B1C00F8EF58 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		7E59F3791AD23B1C00F8EF58 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		7E59F37A1AD23B1C00F8EF58 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		7E59F3811AD23BC800F8EF58 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		7E59F3841AD23C1500F8EF58 /* FMDBUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBUtil.h; sourceTree = "<group>"; };
+		7E59F3851AD23C1500F8EF58 /* FMDBUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBUtil.m; sourceTree = "<group>"; };
+		7E59F3871AD23C3C00F8EF58 /* FMDBTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBTest.h; sourceTree = "<group>"; };
+		7E59F3881AD23C3C00F8EF58 /* FMDBTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBTest.m; sourceTree = "<group>"; };
+		7E59F38E1AD23F4C00F8EF58 /* test_user.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = test_user.db; sourceTree = "<group>"; };
 		7E5FAAD91AD10196002D9DF3 /* WaterFlowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterFlowCell.h; sourceTree = "<group>"; };
 		7E5FAADA1AD10196002D9DF3 /* WaterFlowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterFlowCell.m; sourceTree = "<group>"; };
 		7E5FAADC1AD10226002D9DF3 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -63,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E59F3831AD23BE000F8EF58 /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +103,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E59F36F1AD23B1C00F8EF58 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				7E59F3701AD23B1C00F8EF58 /* FMDatabase.h */,
+				7E59F3711AD23B1C00F8EF58 /* FMDatabase.m */,
+				7E59F3721AD23B1C00F8EF58 /* FMDatabaseAdditions.h */,
+				7E59F3731AD23B1C00F8EF58 /* FMDatabaseAdditions.m */,
+				7E59F3741AD23B1C00F8EF58 /* FMDatabasePool.h */,
+				7E59F3751AD23B1C00F8EF58 /* FMDatabasePool.m */,
+				7E59F3761AD23B1C00F8EF58 /* FMDatabaseQueue.h */,
+				7E59F3771AD23B1C00F8EF58 /* FMDatabaseQueue.m */,
+				7E59F3781AD23B1C00F8EF58 /* FMDB.h */,
+				7E59F3791AD23B1C00F8EF58 /* FMResultSet.h */,
+				7E59F37A1AD23B1C00F8EF58 /* FMResultSet.m */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+		7E59F3801AD23B2D00F8EF58 /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				7E59F3811AD23BC800F8EF58 /* libsqlite3.dylib */,
+			);
+			name = framework;
+			path = "custom-kity";
+			sourceTree = "<group>";
+		};
+		7E59F38A1AD23DB600F8EF58 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				7E59F38E1AD23F4C00F8EF58 /* test_user.db */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
 		7E5FAAD81AD10175002D9DF3 /* views */ = {
 			isa = PBXGroup;
 			children = (
@@ -85,10 +147,23 @@
 			path = views;
 			sourceTree = "<group>";
 		};
+		7E5FAADD1AD1756B002D9DF3 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				7E59F36F1AD23B1C00F8EF58 /* fmdb */,
+				7E59F3841AD23C1500F8EF58 /* FMDBUtil.h */,
+				7E59F3851AD23C1500F8EF58 /* FMDBUtil.m */,
+				7E59F3871AD23C3C00F8EF58 /* FMDBTest.h */,
+				7E59F3881AD23C3C00F8EF58 /* FMDBTest.m */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
 		7E7B98CA1ACFB1DB00E88762 = {
 			isa = PBXGroup;
 			children = (
 				7E7B98D51ACFB1DC00E88762 /* custom-kity */,
+				7E59F3801AD23B2D00F8EF58 /* framework */,
 				7E7B98EF1ACFB1DC00E88762 /* custom-kityTests */,
 				7E7B98D41ACFB1DC00E88762 /* Products */,
 			);
@@ -106,8 +181,6 @@
 		7E7B98D51ACFB1DC00E88762 /* custom-kity */ = {
 			isa = PBXGroup;
 			children = (
-				7E7B98FC1ACFB26F00E88762 /* controllers */,
-				7E7B98FD1ACFB26F00E88762 /* views */,
 				7E7B98DA1ACFB1DC00E88762 /* AppDelegate.h */,
 				7E7B98DB1ACFB1DC00E88762 /* AppDelegate.m */,
 				7E7B98DD1ACFB1DC00E88762 /* ViewController.h */,
@@ -115,6 +188,10 @@
 				7E7B98E01ACFB1DC00E88762 /* Main.storyboard */,
 				7E7B98E31ACFB1DC00E88762 /* Images.xcassets */,
 				7E7B98E51ACFB1DC00E88762 /* LaunchScreen.xib */,
+				7E5FAADD1AD1756B002D9DF3 /* components */,
+				7E7B98FC1ACFB26F00E88762 /* controllers */,
+				7E7B98FD1ACFB26F00E88762 /* views */,
+				7E59F38A1AD23DB600F8EF58 /* resource */,
 				7E7B98D61ACFB1DC00E88762 /* Supporting Files */,
 			);
 			path = "custom-kity";
@@ -252,6 +329,7 @@
 			files = (
 				7E7B98E21ACFB1DC00E88762 /* Main.storyboard in Resources */,
 				7E7B98E71ACFB1DC00E88762 /* LaunchScreen.xib in Resources */,
+				7E59F38F1AD23F4C00F8EF58 /* test_user.db in Resources */,
 				7E7B98E41ACFB1DC00E88762 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,11 +351,18 @@
 				7E2AEDC01AD0311E005D9510 /* LLWaterflowViewCell.m in Sources */,
 				7E7B98DF1ACFB1DC00E88762 /* ViewController.m in Sources */,
 				7E7B98DC1ACFB1DC00E88762 /* AppDelegate.m in Sources */,
+				7E59F37B1AD23B1C00F8EF58 /* FMDatabase.m in Sources */,
 				7E7B99001ACFB29C00E88762 /* UIButton+LLCustom.m in Sources */,
+				7E59F37E1AD23B1C00F8EF58 /* FMDatabaseQueue.m in Sources */,
+				7E59F3891AD23C3C00F8EF58 /* FMDBTest.m in Sources */,
+				7E59F3861AD23C1500F8EF58 /* FMDBUtil.m in Sources */,
+				7E59F37F1AD23B1C00F8EF58 /* FMResultSet.m in Sources */,
+				7E59F37D1AD23B1C00F8EF58 /* FMDatabasePool.m in Sources */,
 				7E7B98D91ACFB1DC00E88762 /* main.m in Sources */,
 				7E5FAADB1AD10196002D9DF3 /* WaterFlowCell.m in Sources */,
 				7E2AEDBD1ACFBDB0005D9510 /* LLWaterfallFlowView.m in Sources */,
 				7E2AEDC31AD03403005D9510 /* WaterfallFlowViewController.m in Sources */,
+				7E59F37C1AD23B1C00F8EF58 /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

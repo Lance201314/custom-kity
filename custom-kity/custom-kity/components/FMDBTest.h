@@ -12,9 +12,13 @@
 
 - (void)testMulit;
 - (void)query;
-- (void)queryWithoutQueue;
 - (void)insert;
 - (void)update;
-- (void)deleteInfo;
+- (void)deleteInfo:(NSUInteger)uid;
+
+- (void)queryWithoutQueue;
+- (void)insertWithoutQueue;
+- (void)updateWithoutQueue;
+
 
 @end

@@ -20,7 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
   
-    [self test];
+//    [self test];
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.frame = CGRectMake(20.0, 100.0, 300.0, 60.0);
@@ -54,7 +54,7 @@
 - (void)query
 {
     FMDBTest *test = [[FMDBTest alloc] init];
-    [test update];
+    [test query];
 }
 
 - (IBAction)insert:(id)sender {
@@ -65,7 +65,7 @@
 - (void)insert
 {
     FMDBTest *test = [[FMDBTest alloc] init];
-    [test deleteInfo];
+    [test update];
 }
 
 - (void)didReceiveMemoryWarning {

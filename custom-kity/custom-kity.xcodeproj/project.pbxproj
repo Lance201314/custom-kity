@@ -28,6 +28,8 @@
 		7E7B98E71ACFB1DC00E88762 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E7B98E51ACFB1DC00E88762 /* LaunchScreen.xib */; };
 		7E7B98F31ACFB1DC00E88762 /* custom_kityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7B98F21ACFB1DC00E88762 /* custom_kityTests.m */; };
 		7E7B99001ACFB29C00E88762 /* UIButton+LLCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7B98FF1ACFB29C00E88762 /* UIButton+LLCustom.m */; };
+		A363CE111AD3808200943DF4 /* DBConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = A363CE101AD3808200943DF4 /* DBConnection.m */; };
+		A363CE141AD3892000943DF4 /* BlockLearn.m in Sources */ = {isa = PBXBuildFile; fileRef = A363CE131AD3892000943DF4 /* BlockLearn.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,10 @@
 		7E7B98F21ACFB1DC00E88762 /* custom_kityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = custom_kityTests.m; sourceTree = "<group>"; };
 		7E7B98FE1ACFB29C00E88762 /* UIButton+LLCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+LLCustom.h"; sourceTree = "<group>"; };
 		7E7B98FF1ACFB29C00E88762 /* UIButton+LLCustom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+LLCustom.m"; sourceTree = "<group>"; };
+		A363CE0F1AD3808200943DF4 /* DBConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBConnection.h; sourceTree = "<group>"; };
+		A363CE101AD3808200943DF4 /* DBConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBConnection.m; sourceTree = "<group>"; };
+		A363CE121AD3892000943DF4 /* BlockLearn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockLearn.h; sourceTree = "<group>"; };
+		A363CE131AD3892000943DF4 /* BlockLearn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockLearn.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +161,10 @@
 				7E59F3851AD23C1500F8EF58 /* FMDBUtil.m */,
 				7E59F3871AD23C3C00F8EF58 /* FMDBTest.h */,
 				7E59F3881AD23C3C00F8EF58 /* FMDBTest.m */,
+				A363CE0F1AD3808200943DF4 /* DBConnection.h */,
+				A363CE101AD3808200943DF4 /* DBConnection.m */,
+				A363CE121AD3892000943DF4 /* BlockLearn.h */,
+				A363CE131AD3892000943DF4 /* BlockLearn.m */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -354,6 +364,7 @@
 				7E59F37B1AD23B1C00F8EF58 /* FMDatabase.m in Sources */,
 				7E7B99001ACFB29C00E88762 /* UIButton+LLCustom.m in Sources */,
 				7E59F37E1AD23B1C00F8EF58 /* FMDatabaseQueue.m in Sources */,
+				A363CE141AD3892000943DF4 /* BlockLearn.m in Sources */,
 				7E59F3891AD23C3C00F8EF58 /* FMDBTest.m in Sources */,
 				7E59F3861AD23C1500F8EF58 /* FMDBUtil.m in Sources */,
 				7E59F37F1AD23B1C00F8EF58 /* FMResultSet.m in Sources */,
@@ -363,6 +374,7 @@
 				7E2AEDBD1ACFBDB0005D9510 /* LLWaterfallFlowView.m in Sources */,
 				7E2AEDC31AD03403005D9510 /* WaterfallFlowViewController.m in Sources */,
 				7E59F37C1AD23B1C00F8EF58 /* FMDatabaseAdditions.m in Sources */,
+				A363CE111AD3808200943DF4 /* DBConnection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

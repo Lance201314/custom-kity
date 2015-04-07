@@ -10,16 +10,30 @@
 #import "FMDB.h"
 #import "FMDBUtil.h"
 
+static NSUInteger _index;
+
 @interface FMDBTest ()
 {
     FMDatabaseQueue *_queue;
     
-    NSUInteger _index;
+    NSString *_path;
 }
 
 @end
 
 @implementation FMDBTest
+
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        _path = [self checkDataBaseWithName:@"user.db"];
+        
+        _index = 0;
+    }
+    
+    return self;
+}
 
 - (void)testMulit
 {
@@ -56,7 +70,7 @@
 {
     FMDBUtil *util = [FMDBUtil shareInstance];
     [util inTransaction:^(FMDatabase *db, BOOL *rollback) {
-        for (int i = 11; i <= 30; i ++) {
+        for (int i = 0; i <= 30; i ++) {
             [db executeUpdate:@"update users set nickname=? where uid=?", [NSString stringWithFormat:@"name %i aa", i], [NSString stringWithFormat:@"%i", i]];
             
             [NSThread sleepForTimeInterval:3];
@@ -66,42 +80,81 @@
     }];
 }
 
-- (void)deleteInfo
+- (void)deleteInfo:(NSUInteger)uid
 {
     FMDBUtil *util = [FMDBUtil shareInstance];
     [util inTransaction:^(FMDatabase *db, BOOL *rollback) {
-        for (int i = 11; i <= 30; i ++) {
-            [db executeUpdate:@"delete from users where uid=?", [NSString stringWithFormat:@"%i", i]];
-            [NSThread sleepForTimeInterval:2];
-            
-            NSLog(@"delete %d", i);
-        }
+        [db executeUpdate:@"delete from users where uid=?", [NSString stringWithFormat:@"%lu", uid]];
+        [NSThread sleepForTimeInterval:2];
     }];
 }
 
 - (void)query
 {
-    NSString *path = [self checkDataBaseWithName:@"user.db"];
-    _queue = [FMDatabaseQueue databaseQueueWithPath:path];
+    _queue = [FMDatabaseQueue databaseQueueWithPath:_path];
     [_queue inDatabase:^(FMDatabase *db) {
         FMResultSet *rs = [db executeQuery:@"select * from users"];
+        NSMutableArray *array = [NSMutableArray array];
         while ([rs next]) {
             NSLog(@"uid-->%@, name-->%@", [rs objectForColumnName:@"uid"], [rs objectForColumnName:@"name"]);
+            
+            [array addObject:[rs objectForColumnName:@"uid"]];
+            
         }
-        [db close];
+        [rs close];
+        
+        for (int i = 0; i < array.count; i ++) {
+            NSInteger index = [[array objectAtIndex:i] integerValue];
+            [self deleteInfo:index];
+            
+            [NSThread sleepForTimeInterval:0.5];
+        }
     }];
 }
 
 - (void)queryWithoutQueue
 {
-    NSString *path = [self checkDataBaseWithName:@"user.db"];
-    FMDatabase *db = [FMDatabase databaseWithPath:path];
+    FMDatabase *db = [FMDatabase databaseWithPath:_path];
     [db open];
+    
+//    [db beginTransaction];
     FMResultSet *rs = [db executeQuery:@"select * from users"];
     while ([rs next]) {
-//        NSLog(@"uid-->%@, name-->%@", [rs objectForColumnName:@"uid"], [rs objectForColumnName:@"name"]);
+        NSLog(@"uid-->%@, name-->%@", [rs objectForColumnName:@"uid"], [rs objectForColumnName:@"name"]);
+        [NSThread sleepForTimeInterval:0.5];
+        
+        [self deleteInfoWithoutQueue:[[rs objectForColumnName:@"uid"] integerValue]];
     }
+
     [db close];
+}
+
+- (void)insertWithoutQueue
+{
+    FMDatabase *db = [FMDatabase databaseWithPath:_path];
+    [db open];
+    [db executeUpdate:@"insert into users(name, nickname) values(?,?)", [NSString stringWithFormat:@"name %lu", _index], [NSString stringWithFormat:@"nickname %lu", _index]];
+    [db close];
+    
+    _index ++;
+}
+
+- (void)deleteInfoWithoutQueue:(NSUInteger)uid
+{
+    FMDatabase *db = [FMDatabase databaseWithPath:_path];
+    [db open];
+    [db executeUpdate:@"delete from users where uid=?", [NSString stringWithFormat:@"%lu", uid]];
+    [db close];
+}
+
+- (void)updateWithoutQueue
+{
+    FMDatabase *db = [FMDatabase databaseWithPath:_path];
+    [db open];
+    [db executeUpdate:@"update users set nickname=? where uid=?", [NSString stringWithFormat:@"name %lu aa", _index + 100], [NSString stringWithFormat:@"%lu", _index + 10]];
+    [db close];
+    
+    _index ++;
 }
 
 - (NSString *)checkDataBaseWithName:(NSString *)dbName
